@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from mi_proyecto.tienda.models import Venta
 from .forms import VentaForm
 
 # Create your views here.
