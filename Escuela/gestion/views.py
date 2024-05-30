@@ -4,6 +4,11 @@ from django.shortcuts import render, redirect
 from .forms import AlumnoForm, CursoForm, NotasAlumnosPorCursoForm
 from .models import Alumno, Curso, NotasAlumnosPorCurso
 
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'gestion/home.html')
+
 def nuevo_alumno(request):
     if request.method == 'POST':
         form = AlumnoForm(request.POST)
@@ -12,7 +17,7 @@ def nuevo_alumno(request):
             return redirect('lista_alumnos')
     else:
         form = AlumnoForm()
-    return render(request, 'gestion/nuevo_alumno.html', {'form': form})
+    return render(request, 'templates/nuevo_alumno.html', {'form': form})
 
 def nuevo_curso(request):
     if request.method == 'POST':
