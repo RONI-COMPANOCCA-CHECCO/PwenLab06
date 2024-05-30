@@ -4,7 +4,7 @@ from .models import Alumno, Curso, NotasAlumnosPorCurso
 class AlumnoForm(forms.ModelForm):
     class Meta:
         model = Alumno
-        fields = ['nombre', 'apellido', 'fecha_nacimiento']
+        fields = ['nombre', 'apellido', 'cui']
 
 
 class CursoForm(forms.ModelForm):

@@ -1,10 +1,8 @@
 # gestion/views.py
 
 from django.shortcuts import render, redirect
-from .forms import AlumnoForm, CursoForm, NotasAlumnosPorCursoForm
 from .models import Alumno, Curso, NotasAlumnosPorCurso
-
-from django.shortcuts import render
+from .forms import AlumnoForm, CursoForm, NotasAlumnosPorCursoForm
 
 def home(request):
     return render(request, 'gestion/home.html')
