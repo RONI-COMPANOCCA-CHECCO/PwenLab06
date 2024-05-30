@@ -17,7 +17,7 @@ def nuevo_alumno(request):
             return redirect('lista_alumnos')
     else:
         form = AlumnoForm()
-    return render(request, 'templates/nuevo_alumno.html', {'form': form})
+    return render(request, 'gestion/nuevo_alumno.html', {'form': form})
 
 def nuevo_curso(request):
     if request.method == 'POST':

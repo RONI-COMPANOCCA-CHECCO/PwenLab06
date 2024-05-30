@@ -7,5 +7,15 @@
 </head>
 <body>
     <h1>Bienvenido a la Gestión de Alumnos</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'lista_alumnos' %}">Lista de Alumnos</a></li>
+            <li><a href="{% url 'lista_cursos' %}">Lista de Cursos</a></li>
+            <li><a href="{% url 'lista_notas' %}">Lista de Notas</a></li>
+            <li><a href="{% url 'nuevo_alumno' %}">Nuevo Alumno</a></li>
+            <li><a href="{% url 'nuevo_curso' %}">Nuevo Curso</a></li>
+            <li><a href="{% url 'nueva_nota' %}">Nueva Nota</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
